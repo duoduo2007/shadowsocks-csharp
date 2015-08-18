@@ -322,7 +322,7 @@ namespace Shadowsocks.View
         void configForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             configForm = null;
-            Util.Utils.ReleaseMemory(true);
+            Util.Utils.ReleaseMemory();
             ShowFirstTimeBalloon();
         }
 
